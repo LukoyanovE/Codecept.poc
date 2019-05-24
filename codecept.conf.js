@@ -12,15 +12,13 @@ exports.config = {
       seleniumAddress: undefined,
       useAllAngular2AppRoots: true,
       smartWait: 5000,
-    }
-  },
-  include: {
-    I: './e2e/step_file.js'
-  },
-  helpers: {
+    },
     MyHelper: {
       require: './e2e/helpers/my_helper.ts',
     },
+  },
+  include: {
+    I: './e2e/step_file.js'
   },
   bootstrap: null,
   mocha: {},
