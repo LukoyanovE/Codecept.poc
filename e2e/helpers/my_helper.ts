@@ -1,6 +1,6 @@
 import { AzureVaultService } from '../services/azureServices/azureVaultService';
 
-export class MyHelper extends Helper {
+class MyHelper extends Helper {
 
   async getNonProdPassword(): Promise<string> {
     const azureVault: AzureVaultService = new AzureVaultService();
@@ -9,3 +9,9 @@ export class MyHelper extends Helper {
   }
 
 }
+
+// use this variant
+module.exports = MyHelper;
+
+// or this variant, directly in declaration:
+// module.exports = class MyHelper extends Helper {
