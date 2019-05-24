@@ -214,9 +214,9 @@ declare namespace CodeceptJS {
     haveModule(modName: string, fn: Function) : void,
     resetModule(modName: string) : void,
     setCookie(cookie: string) : void,
-    getNonProdPassword(): string,
     debug(msg: string) : void,
     debugSection(section: string, msg: string) : void,
+    getNonProdPassword() : string,
     say: () => any; 
     retryStep(opts: string) : void,
 
@@ -227,5 +227,3 @@ declare namespace CodeceptJS {
 declare module "codeceptjs" {
     export = CodeceptJS;
 }
-
-

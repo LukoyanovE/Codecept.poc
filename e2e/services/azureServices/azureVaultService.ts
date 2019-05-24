@@ -1,14 +1,14 @@
 
 export class AzureVaultService {
 
-    async makeAzureRequest(): Promise<void> {
-        console.log('Start a fake 5 second delay');
-        return new Promise((resolve) => setTimeout(() => resolve, 5000));
+    async fakeFunction(): Promise<void> {
+        console.log('return a void');
+        return;
     }
 
-    async getNonProdPassword(): Promise<string> {
-        await this.makeAzureRequest();
-        console.log('END a fake 5 second delay');
+    async getSomeText(): Promise<string> {
+        await this.fakeFunction();
+        console.log('void returned');
         return Promise.resolve('Locators');
     }
 
