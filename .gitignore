@@ -1,0 +1,8 @@
+# node modules
+node_modules
+
+# package.json lock file
+package-lock.json
+
+# e2e results
+e2e/output
